@@ -1,0 +1,34 @@
++ {
+  box-sizing: border-box;
+}
+
+.no-items {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.items-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.item {
+  width: 150px;
+  height: 180px;
+  background: #273043;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-right: 20px;
+  span {
+    display: block;
+    margin: 10px 0;
+  }
+}

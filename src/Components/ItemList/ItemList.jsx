@@ -1,4 +1,5 @@
 import React from "react";
+import "./ItemList.scss";
 
 const ItemList = ({ items, deleteItem }) => {
   const listItems = items.length ? (
@@ -13,9 +14,9 @@ const ItemList = ({ items, deleteItem }) => {
       );
     })
   ) : (
-    <p>There is no Item</p>
+    <p className="no-items">There is no Item</p>
   );
-  return <div>{listItems}</div>;
+  return <div className="items-container">{listItems}</div>;
 };
 
 export default ItemList;

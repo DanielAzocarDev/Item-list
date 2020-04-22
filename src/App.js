@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import FormItem from "./Components/Form/FormItem";
 import ItemList from "./Components/ItemList/ItemList";
 
+import "./App.scss";
+
 class App extends Component {
   state = {
     items: [],
@@ -28,8 +30,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <FormItem addItem={this.addItem} />
-        <ItemList items={this.state.items} deleteItem={this.deleteItem} />
+        <div className="form-container">
+          <FormItem addItem={this.addItem} />
+        </div>
+        <div className="list-container">
+          <ItemList items={this.state.items} deleteItem={this.deleteItem} />
+        </div>
       </div>
     );
   }
